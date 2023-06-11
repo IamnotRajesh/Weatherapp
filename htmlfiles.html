@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		First number:<br>
+		<input type="text" id="text1">
+		<br>
+		Second number:<br>
+		<input type="text" id="text2">
+		<br>
+		Result:<br>
+		<input type="text" id="res">
+		<br>
+		<input type="button" value="Display Addition" onclick="sumNum()">
+		<input type="button" value="Display Subtraction" onclick="subNum()"><br>
+		<input type="button" value="Display Multiplication" onclick="mulNum()">
+		<input type="button" value="Display Division" onclick="divNum()">
+	</div>
+<script>
+	function sumNum(){
+		var f_num = parseInt(document.getElementById("text1").value);
+		var s_num = parseInt(document.getElementById("text2").value);
+		var sum = f_num + s_num;
+		document.getElementById("res").value = sum;
+	}
+
+function subNum(){
+		var f_num = parseInt(document.getElementById("text1").value);
+		var s_num = parseInt(document.getElementById("text2").value);
+		var sub = f_num - s_num;
+		document.getElementById("res").value = sub;
+	}
+
+function mulNum(){
+		var f_num = parseInt(document.getElementById("text1").value);
+		var s_num = parseInt(document.getElementById("text2").value);
+		var mul = f_num * s_num;
+		document.getElementById("res").value = mul;
+	}
+
+function divNum(){
+		var f_num = parseInt(document.getElementById("text1").value);
+		var s_num = parseInt(document.getElementById("text2").value);
+		var div = f_num / s_num;
+		document.getElementById("res").value = div;
+	}
+
+</script>
+</body>
+</html>
+
